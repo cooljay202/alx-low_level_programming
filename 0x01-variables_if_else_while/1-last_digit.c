@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - A program that print whether the stored in the
- * variable n is positive or negative
+ * main - the last digit of n
  * Return: 0 (success)
  */
 int main(void)
@@ -12,9 +11,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	if (n > 5)
 	{
-		printf("%d is positive\n", n);
+		printf("%d is greater than 5\n", n);
 	}
 	else if (n == 0)
 	{
@@ -22,7 +21,8 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is negative\n", n);
+		printf("%d is less than 6\n", n);
 	}
 	return (0);
 }
+
